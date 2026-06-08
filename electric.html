@@ -1,0 +1,196 @@
+<!-- electric.html -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>일렉기타 게시판</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#222;
+}
+
+header{
+    background:white;
+    padding:20px 30px;
+    border-bottom:1px solid #ddd;
+}
+
+.logo{
+    text-decoration:none;
+    color:#ff7b00;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.menu-bar{
+    background:white;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    padding:20px;
+    border-bottom:1px solid #ddd;
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+
+.menu-bar a{
+    text-decoration:none;
+    color:#333;
+    font-weight:bold;
+    font-size:18px;
+}
+
+.menu-bar a:hover{
+    color:#ff7b00;
+}
+
+.section{
+    padding:60px 20px;
+}
+
+.title{
+    text-align:center;
+    font-size:42px;
+    color:#ff7b00;
+    margin-bottom:40px;
+}
+
+.board{
+    max-width:1000px;
+    margin:auto;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.board-header{
+    display:grid;
+    grid-template-columns:100px 1fr;
+    background:#ff7b00;
+    color:white;
+    padding:18px;
+    font-weight:bold;
+}
+
+.board-row{
+    display:grid;
+    grid-template-columns:100px 1fr;
+    padding:20px;
+    border-bottom:1px solid #eee;
+    transition:0.3s;
+}
+
+.board-row:hover{
+    background:#fff3e8;
+}
+
+.lesson-link{
+    text-decoration:none;
+    color:#222;
+    font-weight:bold;
+    font-size:18px;
+}
+
+.lesson-link:hover{
+    color:#ff7b00;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:60px;
+}
+
+@media(max-width:768px){
+
+    .menu-bar{
+        flex-wrap:wrap;
+        gap:20px;
+    }
+
+    .title{
+        font-size:30px;
+    }
+
+    .board-header{
+        display:none;
+    }
+
+    .board-row{
+        grid-template-columns:1fr;
+        gap:10px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+    
+    <header>
+        
+        <a href="index.html" class="logo">🌲 Guitar Forest 🌲</a>
+
+    </header>
+    
+    <div class="menu-bar">
+        
+        <a href="index.html">홈</a>
+        <a href="lesson.html">강의</a>
+        <a href="sheet.html">악보</a>
+        <a href="contact.html">문의</a>
+
+    </div>
+    
+    <section class="section">
+        
+        <h1 class="title">일렉기타 게시판</h1>
+        
+        <div class="board">
+            
+            <div class="board-header">
+                
+                <div>번호</div>
+                <div>강의 제목</div>
+
+            </div>
+            
+            <div class="board-row">
+                
+                <div>1</div>
+                
+                <div>
+                    
+                    <a href="electric1.html" class="lesson-link">일렉기타 소개 및 기본 이론</a>
+                
+                </div>
+            
+            </div>
+        
+        </div>
+    
+    </section>
+
+    <footer>
+        © 2026 Guitar Forest
+    </footer>
+
+</body>
+</html>

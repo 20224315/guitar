@@ -1,0 +1,200 @@
+<!-- song1.html -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>그린비</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#222;
+}
+
+header{
+    background:white;
+    padding:20px 30px;
+    border-bottom:1px solid #ddd;
+}
+
+.logo{
+    text-decoration:none;
+    color:#ff7b00;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.menu-bar{
+    background:white;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    padding:20px;
+    border-bottom:1px solid #ddd;
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+
+.menu-bar a{
+    text-decoration:none;
+    color:#333;
+    font-weight:bold;
+    font-size:18px;
+}
+
+.menu-bar a:hover{
+    color:#ff7b00;
+}
+
+.section{
+    padding:60px 20px;
+}
+
+.song-box{
+    max-width:1000px;
+    margin:auto;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.song-image{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+}
+
+.song-content{
+    padding:40px;
+}
+
+.song-title{
+    font-size:42px;
+    color:#ff7b00;
+    margin-bottom:20px;
+}
+
+.song-text{
+    line-height:2;
+    font-size:18px;
+    margin-bottom:40px;
+}
+
+.sheet-title{
+    font-size:28px;
+    color:#ff7b00;
+    margin-bottom:20px;
+}
+
+.sheet-image{
+    width:100%;
+    border-radius:15px;
+    border:1px solid #ddd;
+}
+
+.video-title{
+    font-size:28px;
+    color:#ff7b00;
+    margin:40px 0 20px;
+}
+
+video{
+    width:100%;
+    border-radius:15px;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:60px;
+}
+
+@media(max-width:768px){
+
+    .menu-bar{
+        flex-wrap:wrap;
+        gap:20px;
+    }
+
+    .song-title{
+        font-size:30px;
+    }
+
+    .song-text{
+        font-size:16px;
+    }
+
+    .song-image{
+        height:250px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+    <header>
+        
+        <a href="index.html" class="logo">🌲 Guitar Forest 🌲</a>
+    
+    </header>
+    
+    <div class="menu-bar">
+        
+        <a href="index.html">홈</a>
+        <a href="lesson.html">강의</a>
+        <a href="sheet.html">악보</a>
+        <a href="contact.html">문의</a>
+
+    </div>
+    
+    <section class="section">
+        
+        <div class="song-box">
+            
+            <img src="https://images.openai.com/static-rsc-4/9V3dKaTwjAn89ImIhsGf7-VFceufb7_H515JbC-PUytnDPhFyIrxMveigIshRCEAw01rxarAoimkTM8Z2YMIJAUYtEL_XAqmnvNgMxkiaPVPTYLrlVC6gH9QXVzdQmyhrhy7puHuphP7NPCTNCxjvp-sRzNJO0bHb1buNM_L5agIIymvf7xmF-mNLBNK7TmV?purpose=fullsize" class="song-image">
+            
+            <div class="song-content">
+                
+                <h1 class="song-title">그린비</h1>
+                
+                <h2 class="sheet-title">📄 악보</h2>
+                
+                <img src="sheet.png" class="sheet-image">
+                
+                <h2 class="video-title">🎬 연주 영상</h2>
+                
+                <video controls>
+                    
+                    <source src="song1.mp4" type="video/mp4">
+                
+                </video>
+            
+            </div>
+
+        </div>
+
+    </section>
+    
+    <footer>
+        © 2026 Guitar Forest
+    </footer>
+
+</body>
+</html>

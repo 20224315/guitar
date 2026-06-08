@@ -1,0 +1,192 @@
+<!-- sheet.html (악보페이지) -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>악보 게시판</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#222;
+}
+
+
+header{
+    background:white;
+    padding:20px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #ddd;
+}
+
+.logo{
+    text-decoration:none;
+    color:#ff7b00;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav{
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ff7b00;
+}
+
+.section{
+    padding:60px 20px;
+}
+
+.title{
+    text-align:center;
+    font-size:42px;
+    color:#ff7b00;
+    margin-bottom:40px;
+}
+
+.board{
+    max-width:1000px;
+    margin:auto;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.board-header{
+    display:grid;
+    grid-template-columns:100px 1fr 200px;
+    background:#ff7b00;
+    color:white;
+    padding:18px;
+    font-weight:bold;
+}
+
+.board-row{
+    display:grid;
+    grid-template-columns:100px 1fr 200px;
+    padding:20px;
+    border-bottom:1px solid #eee;
+    align-items:center;
+    transition:0.3s;
+}
+
+.board-row:hover{
+    background:#fff3e8;
+}
+
+.song-link{
+    text-decoration:none;
+    color:#222;
+    font-weight:bold;
+}
+
+.song-link:hover{
+    color:#ff7b00;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:60px;
+}
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .title{
+        font-size:30px;
+    }
+
+    .board-header{
+        display:none;
+    }
+
+    .board-row{
+        grid-template-columns:1fr;
+        gap:10px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+    
+    <header>
+
+        <a href="index.html" class="logo">🌲 Guitar Forest 🌲</a>
+        
+        <nav>
+            <a href="index.html">홈</a>
+            <a href="lesson.html">강의</a>
+            <a href="sheet.html">악보</a>
+            <a href="contact.html">문의</a>
+        </nav>
+    
+    </header>
+    
+    <section class="section">
+        
+        <h1 class="title">📄 악보 게시판</h1>
+
+        <div class="board">
+
+            <div class="board-header">
+
+                <div>번호</div>
+                <div>노래 제목</div>
+
+            </div>
+
+            <div class="board-row">
+
+                <div>1</div>
+
+                <div><a href="song1.html" class="song-link">그린비</a></div>
+
+            </div>
+
+        </div>
+
+    </section> 
+
+    <footer>
+        © 2026 Guitar Forest
+    </footer>
+
+</body>
+
+</html>

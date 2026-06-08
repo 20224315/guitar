@@ -1,0 +1,200 @@
+<!-- electric1.html -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>일렉기타 코드 잡는 방법</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#222;
+}
+
+
+
+header{
+    background:white;
+    padding:20px 30px;
+    border-bottom:1px solid #ddd;
+}
+
+.logo{
+    text-decoration:none;
+    color:#ff7b00;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.menu-bar{
+    background:white;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    padding:20px;
+    border-bottom:1px solid #ddd;
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+
+.menu-bar a{
+    text-decoration:none;
+    color:#333;
+    font-weight:bold;
+    font-size:18px;
+}
+
+.menu-bar a:hover{
+    color:#ff7b00;
+}
+
+.section{
+    padding:60px 20px;
+}
+
+.lesson-box{
+    max-width:1000px;
+    margin:auto;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.lesson-image{
+    width:100%;
+    height:450px;
+    object-fit:cover;
+}
+
+.lesson-content{
+    padding:40px;
+}
+
+.lesson-title{
+    font-size:42px;
+    color:#ff7b00;
+    margin-bottom:25px;
+}
+
+.lesson-text{
+    line-height:2;
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.video-title{
+    font-size:28px;
+    margin-bottom:20px;
+    color:#ff7b00;
+}
+
+video{
+    width:100%;
+    border-radius:15px;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:60px;
+}
+
+@media(max-width:768px){
+
+    .menu-bar{
+        flex-wrap:wrap;
+        gap:20px;
+    }
+
+    .lesson-title{
+        font-size:30px;
+    }
+
+    .lesson-text{
+        font-size:16px;
+    }
+
+    .lesson-image{
+        height:250px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+    
+    <header>
+        
+        <a href="index.html" class="logo">🌲 Guitar Forest 🌲</a>
+
+    </header>
+    
+    <div class="menu-bar">
+
+        <a href="index.html">홈</a>
+        <a href="lesson.html">강의</a>
+        <a href="sheet.html">악보</a>
+        <a href="contact.html">문의</a>
+
+    </div>
+    
+    <section class="section">
+        
+        <div class="lesson-box">
+            
+            <img src="https://images.openai.com/static-rsc-4/6rIsEYP8ko4vPoSGuE9TudnQanhONR29fcAcFDg8IYDT9klIJSv-9caEoUGAJdcIRopxLptQQQXXaY8R5cHqh5Ki3boplpcTslxufOVIeg3Ck57k64C1Hmu3WCxej0Fzev3ieUvzZcAnPhgSaTH1Ut-g64hmd97xWucd-jeSPBCST3XIHXEzbNm4ia5xWYQ0?purpose=fullsize" class="lesson-image">
+            
+            <div class="lesson-content">
+                
+                <h1 class="lesson-title">일렉기타 기본 구조와 코드 잡는 방법</h1>
+                
+                <p class="lesson-text">
+                    
+                    일렉기타를 처음 시작하면 가장 먼저 배우는 구조와 코드입니다.<br>
+                    일렉기타 헤드, 넥, 바디를 통해 기타를 잡는 법을 배우며<br>
+                    파워 코드 잡는 방법을 연습하면 다양한 곡을 연주할 수 있습니다.
+                
+                </p>
+                
+                <h2 class="video-title">🎬 강의 영상</h2>
+
+                <video controls>
+                    
+                    <source src="guitar.mp4" type="video/mp4">
+
+                </video>
+                
+                <video controls>
+                    
+                    <source src="ele.mp4" type="video/mp4">
+
+                </video>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        © 2026 Guitar Forest
+    </footer>
+
+</body>
+</html>
